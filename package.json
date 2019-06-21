@@ -1,0 +1,18 @@
+{
+  "name": "app-name",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "@aragon/api": "^1.1.0",
+    "@aragon/client": "^1.1.0",
+    "@aragon/os": "^4.0.1"
+  },
+  "devDependencies": {
+    "@aragon/cli": "^5.4.0",
+    "@babel/polyfill": "^7.2.5",
+    "parcel-bundler": "^1.11.0"
+  },
+  "scripts": {
+    "build": "parcel build app/script.js -d dist/ && parcel build app/index.html -d dist/ --public-url \".\""
+  }
+}
